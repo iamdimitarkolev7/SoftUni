@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Day Of Week", "01. Day Of Week\01. Day Of Week.csproj", "{58747589-291A-4BB2-A813-91A05E713CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Randomize Words", "02. Randomize Words\02. Randomize Words.csproj", "{54A8F5BC-C638-4FCF-95CD-F76377A21CCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Big Factorial", "03. Big Factorial\03. Big Factorial.csproj", "{53DD7A44-7995-4838-B584-CE8C71F7E8A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Distance Between Two Points", "04. Distance Between Two Points\04. Distance Between Two Points.csproj", "{A5D866A9-7635-4A7D-A228-0DA3B4549152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Closest Two Points", "05. Closest Two Points\05. Closest Two Points.csproj", "{9AF1FCB2-1114-4DA1-ABEE-DC213CBF7A5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58747589-291A-4BB2-A813-91A05E713CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58747589-291A-4BB2-A813-91A05E713CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58747589-291A-4BB2-A813-91A05E713CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58747589-291A-4BB2-A813-91A05E713CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54A8F5BC-C638-4FCF-95CD-F76377A21CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A8F5BC-C638-4FCF-95CD-F76377A21CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A8F5BC-C638-4FCF-95CD-F76377A21CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A8F5BC-C638-4FCF-95CD-F76377A21CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53DD7A44-7995-4838-B584-CE8C71F7E8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53DD7A44-7995-4838-B584-CE8C71F7E8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53DD7A44-7995-4838-B584-CE8C71F7E8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53DD7A44-7995-4838-B584-CE8C71F7E8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5D866A9-7635-4A7D-A228-0DA3B4549152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D866A9-7635-4A7D-A228-0DA3B4549152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D866A9-7635-4A7D-A228-0DA3B4549152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D866A9-7635-4A7D-A228-0DA3B4549152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AF1FCB2-1114-4DA1-ABEE-DC213CBF7A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AF1FCB2-1114-4DA1-ABEE-DC213CBF7A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AF1FCB2-1114-4DA1-ABEE-DC213CBF7A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AF1FCB2-1114-4DA1-ABEE-DC213CBF7A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
