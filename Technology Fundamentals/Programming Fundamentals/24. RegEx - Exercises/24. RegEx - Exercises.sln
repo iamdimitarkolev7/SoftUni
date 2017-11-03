@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Extract Emails", "01. Extract Emails\01. Extract Emails.csproj", "{8A3FB66E-59A1-4011-B3F8-DBC97AC2E004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Extract Sentence By Keyword", "02. Extract Sentence By Keyword\02. Extract Sentence By Keyword.csproj", "{655C188C-46D1-42BE-8BB1-376E531E558F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Camera View", "03. Camera View\03. Camera View.csproj", "{18C296AF-FAF8-4E63-B86D-AECABAD7E7D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A3FB66E-59A1-4011-B3F8-DBC97AC2E004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3FB66E-59A1-4011-B3F8-DBC97AC2E004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3FB66E-59A1-4011-B3F8-DBC97AC2E004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3FB66E-59A1-4011-B3F8-DBC97AC2E004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655C188C-46D1-42BE-8BB1-376E531E558F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655C188C-46D1-42BE-8BB1-376E531E558F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655C188C-46D1-42BE-8BB1-376E531E558F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655C188C-46D1-42BE-8BB1-376E531E558F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18C296AF-FAF8-4E63-B86D-AECABAD7E7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C296AF-FAF8-4E63-B86D-AECABAD7E7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C296AF-FAF8-4E63-B86D-AECABAD7E7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C296AF-FAF8-4E63-B86D-AECABAD7E7D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
