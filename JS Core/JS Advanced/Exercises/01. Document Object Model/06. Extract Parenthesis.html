@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="content">
+    This (must be extracted) this not.
+</p>
+<script>
+    function solve(id) {
+        let text = document.getElementById(id).textContent;
+        let regex = /\((.+?)\)/g;
+        let match = regex.exec(text);
+        let arr = [];
+        while (match) {
+            arr.push(match[1]);
+            match = regex.exec(text);
+        }
+        return arr.join("; ");
+    }
+    console.log(solve("content"));
+</script>
+</body>
+</html>
