@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Move Up / Down</title>
+    <style>
+        select { width: 70px }
+        .block { display: inline-block; vertical-align: top }
+        #btnUp { display: block; margin-top: 18px }
+        #btnDown { display: block; margin-top: 10px }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div class="block">
+    <select id="towns" size="5">
+        <option>Sofia</option>
+        <option>Varna</option>
+        <option>Plovdiv</option>
+        <option>Ruse</option>
+    </select>
+</div>
+<div class="block">
+    <button id="btnUp" onclick="move(-1)">&uparrow;</button>
+    <button id="btnDown" onclick="move(+1)">&downarrow;</button>
+</div>
+<script>
+    function move(direction) {
+        switch(direction) {
+            case +1: up();
+            break;
+            case -1: down();
+            break;
+        }
+
+        function down() {
+            let selected = $("#towns").find(":selected");
+            let before = selected.prev();
+            if (before.length > 0)
+                selected.detach().insertBefore(before);
+        }
+
+        function up() {
+            let selected = $("#towns").find(":selected");
+            let next = selected.next();
+            if (next.length > 0)
+                selected.detach().insertAfter(next);
+        }
+    }
+</script>
+</body>
+</html>
