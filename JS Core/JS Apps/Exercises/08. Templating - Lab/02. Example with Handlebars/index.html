@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        (async function () {
+            let source = await $.get("template.hbs");
+            let template = Handlebars.compile(source);
+            let context = { title: "Intro", body: "Hello" };
+            let html = template(context);
+            $('body').append(html);
+        }());
+    </script>
+</body>
+</html>

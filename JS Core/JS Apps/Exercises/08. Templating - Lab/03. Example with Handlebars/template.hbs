@@ -1,0 +1,19 @@
+<article>
+    {{#if title}}
+    <h2>{{title}}</h2>
+    {{else}}
+    <h2>No title</h2>
+    {{/if}}
+    {{#each contacts}}
+        <div class="title">
+            {{name}}
+            <button>&#8505;</button>
+        </div>
+        <div class="info">
+            <span>&phone; {{phone}}</span>
+            <span>&#9993; {{email}}</span>
+        </div>
+
+        {{> partial age=17}}
+    {{/each}}
+</article>

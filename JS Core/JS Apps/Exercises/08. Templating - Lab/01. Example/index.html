@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //using templates without using an auxiliary libraries
+        (async function () {
+            let template = await $.get('template.html');
+            let content1 = template
+                .replace(/{{title}}/, "Title1")
+                .replace(/{{body}}/, "Body1");
+            $('body').append(content1);
+            let content2 = template
+                .replace(/{{title}}/, "Title2")
+                .replace(/{{body}}/, "Body12");
+            $('body').append(content2);
+            let content3 = template
+                .replace(/{{title}}/, "Title3")
+                .replace(/{{body}}/, "Body3");
+            $('body').append(content3);
+        })();
+
+    </script>
+</body>
+</html>
