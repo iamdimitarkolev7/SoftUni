@@ -1,0 +1,9 @@
+table tbody tr:hover {
+    background-color: black;
+    color: white;
+}
+
+table tr:nth-child(odd) td {
+    background-color: rgb(241, 241, 241);
+}
+
