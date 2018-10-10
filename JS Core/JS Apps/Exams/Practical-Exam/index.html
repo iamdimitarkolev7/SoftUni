@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PointOfSale SPA</title>
+    <link rel="stylesheet" href="style/site.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/notifications.css">
+    <link rel="stylesheet" href="style/sections.css">
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/models/auth.js"></script>
+    <script src="scripts/models/requester.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/models/receiptService.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+    <header class="clearfix" id="profile">
+        <div id="cashier">
+            <span>Cashier: </span>
+            <a href="#">Pesho</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="#" data-target="create-receipt-view" id="editor">Editor</a>
+                </li>
+                <li>
+                    <a href="#" data-target="all-receipt-view">Overview</a>
+                </li>
+                <li>
+                    <a href="#" class="logout">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="clearfix" id="welcome-section">
+        <div class="welcome-text">
+            <h1>What is Lorem Ipsum?</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="welcome-forms">
+            <div class="welcome-login-form">
+                <h1>Sign in</h1>
+                <form id="login-form">
+                    <label for="username-login">Username</label>
+                    <input type="text" name="username-login" id="username-login" placeholder="Username">
+                    <label for="password-login">Password</label>
+                    <input type="password" name="password-login" id="password-login" placeholder="Password">
+                    <input id="loginBtn" type="submit" value="Login" />
+                </form>
+            </div>
+            <div class="welcome-rigister-form">
+                <h1>Register</h1>
+                <form id="register-form">
+                    <label for="username-register">Username</label>
+                    <input type="text" name="username-register" id="username-register" placeholder="Username">
+                    <label for="password-register">Password</label>
+                    <input type="password" name="password-register" id="password-register" placeholder="Password">
+                    <label for="password-register-check">Password check</label>
+                    <input type="password" name="password-register-check" id="password-register-check" placeholder="Repeat password">
+                    <input id="registerBtn" type="submit" value="Register" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="create-receipt-view">
+        <h1>Create Receipt</h1>
+        <div class="table">
+            <div class="table-head">
+                <div class="col wide">Product Name</div>
+                <div class="col wide">Quantity</div>
+                <div class="col wide">Price per Unit</div>
+                <div class="col">Sub-total</div>
+                <div class="col">Action</div>
+            </div>
+            <div id="active-entries">
+                <div class="row">
+                    <div class="col wide">Apple</div>
+                    <div class="col wide">10</div>
+                    <div class="col wide">4.50</div>
+                    <div class="col">45.00</div>
+                    <div class="col right">
+                        <a href="#">&#10006;</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col wide">Banana</div>
+                    <div class="col wide">9</div>
+                    <div class="col wide">3.50</div>
+                    <div class="col">31.50</div>
+                    <div class="col right">
+                        <a href="#">&#10006;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <form id="create-entry-form">
+                    <div class="col wide">
+                        <input name="type" placeholder="Product name">
+                    </div>
+                    <div class="col wide">
+                        <input name="qty" placeholder="Quantity">
+                    </div>
+                    <div class="col wide">
+                        <input name="price" placeholder="Price per Unit">
+                    </div>
+                    <div class="col">Sub-total</div>
+                    <div class="col">
+                        <input id="addItemBtn" type="submit" value="Add" />
+                    </div>
+                </form>
+            </div>
+            <div class="table-foot">
+                <form id="create-receipt-form">
+                    <div class="col wide">
+                    </div>
+                    <div class="col wide">
+                    </div>
+                    <div class="col wide right">Total:</div>
+                    <div class="col">76.50</div>
+                    <div class="col">
+                        <input id="checkoutBtn" type="submit" value="Checkout" />
+                    </div>
+                    <input type="hidden" name="receiptId" />
+                    <input type="hidden" name="productCount" />
+                    <input type="hidden" name="total" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="all-receipt-view">
+        <h1>All Receipts</h1>
+        <div class="table">
+            <div class="table-head">
+                <div class="col wide">Creation Date</div>
+                <div class="col wide">Items</div>
+                <div class="col">Total</div>
+                <div class="col">Actions</div>
+            </div>
+            <div class="row">
+                <div class="col wide">2018-04-15 14:58</div>
+                <div class="col wide">10</div>
+                <div class="col">110.00</div>
+                <div class="col">
+                    <a href="#" data-target="receipt-details-view">Details</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col wide">2018-04-15 12:33</div>
+                <div class="col wide">15</div>
+                <div class="col">160.50</div>
+                <div class="col">
+                    <a href="#" data-target="receipt-details-view">Details</a>
+                </div>
+            </div>
+            <div class="table-foot">
+                <form id="estimate-total">
+                    <div class="col wide">
+                    </div>
+                    <div class="col wide right">Total:</div>
+                    <div class="col">270.50</div>
+                    <div class="col">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="receipt-details-view">
+        <h1>Receipt Details</h1>
+        <div class="table">
+            <div class="table-head">
+                <div class="col wide">Product Name</div>
+                <div class="col wide">Quantity</div>
+                <div class="col wide">Price per Unit</div>
+                <div class="col">Sub-total</div>
+            </div>
+            <div class="row">
+                <div class="col wide">Apple</div>
+                <div class="col wide">10</div>
+                <div class="col wide">4.50</div>
+                <div class="col">45.00</div>
+            </div>
+            <div class="row">
+                <div class="col wide">Banana</div>
+                <div class="col wide">9</div>
+                <div class="col wide">3.50</div>
+                <div class="col">31.50</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        PointOfSale SPA © 2018
+    </footer>
+</div>
+
+<div id="notifications">
+    <div id="loadingBox" class="notification">
+        <span>Loading …</span>
+    </div>
+    <div id="infoBox" class="notification">
+        <span>Info</span>
+    </div>
+    <div id="errorBox" class="notification">
+        <span>Error</span>
+    </div>
+</div>
+
+</body>
+
+</html>
