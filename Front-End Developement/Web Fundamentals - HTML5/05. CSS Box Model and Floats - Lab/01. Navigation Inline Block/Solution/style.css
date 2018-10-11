@@ -1,0 +1,59 @@
+body {
+    padding: 5rem;
+    background: #EEE;
+}
+
+.site {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.site > header:first-of-type {
+    border-bottom: 2px solid #000;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.site-title {
+    display: inline-block;
+}
+
+.site-title a {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+header nav {
+    display: inline-block;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+header nav li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #090;
+}
+
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+header {
+    font-family: "Georgia", sans-serif;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+h1 header {
+    font-family: "Georgia", sans-serif;
+    font-size: 1em; 
+    line-height: 1.2;
+}

@@ -1,0 +1,36 @@
+body {
+    background: rgb(238, 238, 238);
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    max-width: 20rem;
+}
+
+#more {
+    height: 36dp;
+    width: 80dp;
+    color: white;
+    background: rgb(0, 153, 0);
+    border-radius: 8dp 8dp 8dp 8dp;
+    float: right;
+}
+
+section {
+    border-radius: 10px;
+    margin: 100px 100px 100px 100px;
+    box-shadow: 20px solid #000;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+html {
+    font-family: "Helvetica", sans-serif;
+}
+
+h3 {
+    size: 1em/1.2;
+}
