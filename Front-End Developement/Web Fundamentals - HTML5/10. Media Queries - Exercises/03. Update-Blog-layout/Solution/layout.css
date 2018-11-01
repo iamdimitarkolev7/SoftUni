@@ -1,0 +1,25 @@
+.page {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page > header {
+	width: 100%;
+}
+
+.page main {
+	width: 70%;
+}
+
+.page header {
+	border-bottom: 2px solid #000;
+}
+
+main article {
+	padding-right: 2rem;
+}
+
+aside section {
+	padding-left: 4rem;
+}

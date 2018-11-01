@@ -1,0 +1,101 @@
+@media all and (max-width: 480px) {
+    body .menu {
+        width: auto;
+        height: auto;
+        padding: 1rem;
+        overflow: hidden;
+    }
+
+    nav {
+        overflow: hidden;
+    }
+
+    header {
+        overflow: hidden;
+    }
+
+    main {
+        overflow: hidden;
+    }
+
+    .menu span {
+        margin: 0;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    hr {
+        width: 20%;
+    }
+
+    .menu span::after {
+        content: '\2630';
+        margin: 0;
+        float: right;
+    }
+
+    .about-us {
+        width: auto;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .about-us p {
+        width: 100%;
+    }
+
+    .best-place {
+        height: auto;
+    }
+
+    .headings {
+        margin-top: 1rem;
+        width: 80%;
+        height: auto;
+        align-self: center;
+    }
+
+    .paragraph {
+        width: auto;
+        padding: 12px;
+    }
+
+    .views{
+        display: block;
+    }
+
+    .views img {
+        margin: 0;
+        max-width: 100%;
+        width: 90%;
+        padding: 10px;
+    }
+
+    
+
+    #second-heading {
+        margin: 20px;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .why-us {
+        display: block;
+    }
+
+    .why-us article {
+        width: 100%;
+    }
+
+    .our-team {
+        display: block;
+        text-align: center;
+    }
+
+    .our-team article img {
+        margin: 0 1 auto;
+        padding: 2rem;
+    }
+}

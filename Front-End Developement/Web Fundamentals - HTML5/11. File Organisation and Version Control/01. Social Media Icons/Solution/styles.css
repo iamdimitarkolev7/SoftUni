@@ -1,0 +1,23 @@
+@import url("reset.css");
+@import url("typography.css");
+@import url("navigation.css");
+
+body {
+    background: #EEE;
+    padding: 2rem;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 3rem;
+}
+
+.site-title a {
+    display: block;
+    color: purple;
+    text-decoration: none;
+}

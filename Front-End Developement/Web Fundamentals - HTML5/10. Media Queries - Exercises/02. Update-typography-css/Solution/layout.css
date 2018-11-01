@@ -1,0 +1,17 @@
+.page {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page > header {
+	width: 100%;
+}
+
+.page main {
+	width: 70%;
+}
+
+main article {
+	padding-right: 2rem;
+}

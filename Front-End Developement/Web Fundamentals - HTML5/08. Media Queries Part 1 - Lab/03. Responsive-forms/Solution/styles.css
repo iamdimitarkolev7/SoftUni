@@ -1,0 +1,9 @@
+@import url("typography.css");
+@import url("buttons.css");
+@import url("forms.css");
+
+body {
+	background: #FFF;
+	padding: 5rem 2rem;
+}
+

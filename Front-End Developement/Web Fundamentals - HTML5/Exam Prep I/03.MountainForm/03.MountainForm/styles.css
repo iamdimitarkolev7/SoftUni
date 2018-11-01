@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900');
+
+body {
+    font-family: 'Francois One', 'Source Sans Pro', sans-serif;
+    background: #F4FCFF;
+    font-weight: 300;
+}
+
+form {
+    width: 30%;
+    margin: 50px auto;
+}
+
+form h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    border-bottom: 3px solid #31D47D;
+    width: 48%;
+}
+
+form label {
+    display: block;
+    margin: 15px 0;
+}
+
+form label input {
+    border: 1px solid #C7E0E9;
+    outline: none;
+    padding: 8px 35px;
+    border-radius: 3px;
+    width: 32%;
+    margin-left: -26px;
+}
+
+.fas, .far {
+    position: relative;
+    left: 9px;
+    top: 1px;
+    border-right: 1px solid blue;
+    padding: 5px;
+
+}
+
+span #password {
+    color: #a2a2a2;
+}
+
+#submit input {
+    background: #31D47D;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 215px;
+}

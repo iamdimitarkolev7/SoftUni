@@ -1,0 +1,23 @@
+@import url("typography.css");
+
+body {
+	padding: 5em;
+	background: #EEE;
+}
+
+.page {
+	max-width: 60rem;
+	margin: 0 auto;
+}
+
+.page > header:first-of-type {
+	border-bottom: 2px solid #000;
+}
+
+header .site-title {
+	display: inline-block;
+	min-width: 20vw;
+	font-weight: bold;
+	font-size: 3rem;
+	text-transform: uppercase;
+}

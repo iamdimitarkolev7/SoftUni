@@ -1,0 +1,12 @@
+.box {
+    display: flex;
+}
+
+header :first-child {
+    border-bottom: 2px solid #000;
+}
+
+.items {
+    flex-wrap: wrap;
+    align-content: flex-between;
+}
