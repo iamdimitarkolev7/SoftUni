@@ -1,0 +1,74 @@
+@media all and (min-width: 768px) and (max-width: 1028px){
+    #main {
+        display: block;
+    }
+
+    aside {
+        width: auto;
+        padding: 2rem;
+    }
+
+    aside img {
+        width: 250px;
+        height: 250px;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 2rem;
+    }
+
+    #personal-info {
+        display: inline-block;
+        margin: 2rem;
+    }
+
+    main {
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    #work, #education {
+        padding: 2rem;
+        overflow: hidden;
+        width: 89%;
+        margin: auto;
+    }
+
+    footer {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #main {
+        display: block;
+    }
+
+    aside {
+        width: auto;
+        padding: 2rem;
+    }
+
+    aside img {
+        width: 100%;
+        align-self: center;
+    }
+
+    #personal-info {
+        text-align: left;
+    }
+
+    main {
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    #work, #education {
+        padding: 2rem;
+        overflow: hidden;
+    }
+}

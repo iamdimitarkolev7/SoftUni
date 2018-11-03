@@ -1,0 +1,132 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+header .navigation {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header nav {
+    padding: 8px 15px;
+}
+
+header .navigation p {
+    padding: 8px 15px;
+    float: right;
+    padding-left: 415px;
+    color: #777777;
+    font-size: 14px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 188px;
+}
+
+header nav ul li {
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #777777;
+}
+
+#orange {
+    color: #FA5B3D;
+}
+
+p .gray {
+    color: #DDDDDD;
+    font-size: 18px;
+}
+
+header .white {
+    color: white;
+}
+
+header .image img {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+header .image h1,p {
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+#first-child {
+    padding-top: 50px;
+}
+
+header .image h1 {
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 3px;
+}
+
+header .image h1:nth-of-type(2) {
+    padding-bottom: 24px;
+}
+
+#last-child {
+    padding-top: 20px;
+}
+
+main .info {
+    position: relative;
+    top: 120px;
+}
+
+main .info h3{
+    color: black;
+    text-align: center;
+    padding: 2rem;
+}
+
+main .info .articles {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #777777;
+    padding-left: 6rem;
+    padding-right: 10rem;
+}
+
+main .info .articles h1,h2,h3,p,span {
+    color: #777777;
+}
+
+main .info .articles article {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+main .info .articles article .number {
+    font-size: 38px;
+    font: 100;
+}
+
+main .gallery {
+    background: #EDEDED;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem 16rem;
+    justify-content: space-between;
+    position: relative;
+    top: 250px;
+}

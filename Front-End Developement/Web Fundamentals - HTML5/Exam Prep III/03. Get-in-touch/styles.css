@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    margin: 5% 15%;
+    font-family: "Montserrat", sans-serif;
+    background:  linear-gradient(rgba(203,96,179,0.3), rgba(203,96,179,0.3)), url('./images/bg-01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+main {
+    background: white;
+    border-radius: 1rem;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    align-content: center;
+}
+
+main .image-container img {
+    width: auto;
+    height: auto;
+}
+
+main .image-container {
+    width: 40%;
+    margin: auto;
+}
+
+input:focus {
+    background: red;
+}
+
+main .form-container {
+    align-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+main .form-container input {
+    outline: none;
+}
+
+main .form-container form {
+    padding: 5rem 2rem 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-container form h2 {
+    margin-left: 21px;
+}
+
+main .form-container form label {
+    margin: 1rem 1rem 1rem 0;
+    
+}
+
+.form-container form label .info {
+    padding: 14px 51px;
+    border-radius: 20px;
+    border: none;
+    background: #E6E6E6;
+    color: #ACABAA;
+}
+
+.form-container form label .fas {
+    left: 41px;
+    top: 1px;
+    position: relative;
+    color: #ACABAA;
+}
+
+.form-container #last-child textarea { 
+    border-radius: 20px;
+    border: none;
+    background: #E6E6E6;
+    color: #ACABAA;
+    padding-left: 15px;
+}
+
+.form-container #last-child {
+    margin-left: 21px;
+}
+
+.form-container #submit input{
+    margin-left: 21px;
+    width: 247px;
+    height: 51px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background: #846ADD;
+}
+
+.form-container .info:hover {
+    color: transparent;
+}
+
