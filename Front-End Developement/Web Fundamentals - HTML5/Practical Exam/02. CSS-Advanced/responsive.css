@@ -1,0 +1,85 @@
+@media screen and (max-width: 600px) {
+    html {
+		font-size: 14px;
+    }
+    
+    body h1,h2,h3 {
+        font-size: 28px;
+    }
+    
+    .left-to-right:first-child {
+        height: 620px;
+        padding: 25px;
+        padding-top: 2.5rem;
+        padding-bottom: 10px;
+        margin: 20px 25px;
+        background: linear-gradient(0deg, rgba(29, 63, 97, 0.3),
+        rgba(29, 63, 97, 0.2)),
+        url(img/spot-bg-01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(0px 0px, 100% 0px, 100% 84%, 0px 100%);
+    }
+
+    main .left-to-right article {
+        width: auto;
+        height: 450px;
+        padding: 25px;
+        color: #6c6c6c;
+        border-radius: 10%;
+        background-color: white;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    button {
+        display: none;
+    }
+
+    .left-to-right article p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .left-to-right header h1 {
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    main section:nth-child(2), main section:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+        margin: 20px auto;
+        background-color: white;
+    }
+
+    .left-to-right header h1 {
+        margin: 0;
+    }
+
+    form {
+        width: auto;
+        margin-right: 2rem;
+    }
+
+    input {
+        width: 100% !important;
+    }
+
+    input[type="submit"] {
+        width:  30% !important;
+    }
+
+    textarea {
+        width: 100% !important;
+    }
+
+    label:last-of-type {
+        text-align: center !important;
+    }
+
+    main:nth-of-type(4) {
+        justify-content: center;
+    }
+}

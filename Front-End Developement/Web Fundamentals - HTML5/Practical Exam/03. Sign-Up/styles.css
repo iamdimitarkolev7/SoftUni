@@ -1,0 +1,118 @@
+body {
+    background: #E9E9E9;
+    font-family: 'Open Sans', sans-serif;
+    padding: 120px 410px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    background: #FAFAFA;
+    border-radius: 5px;
+    box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.3);
+}
+
+section .image-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 430px;
+    width: 400px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+section .image-container h3 {
+    position: relative;
+    font-size: smaller;
+    top: 15px;
+    left: 12px;
+}
+
+section .image-container h1, h2 {
+    position: relative;
+    text-align: center;
+}
+
+section .image-container h1 {
+    font-weight: 300;
+    font-size: 26px;
+    padding-top: 150px;
+}
+
+section .image-container h2 {
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section .icons {
+    vertical-align: bottom;
+    text-align: center;
+    padding-bottom: 2rem;
+    position: relative;
+    top: 100px;
+}
+
+section .icons i {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+section .form-container {
+    padding: 2rem;
+    height: 430px;
+    width: 400px;
+}
+
+section form label p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: #CCCCCC;
+}
+
+section form label input {
+    background: #FAFAFA;
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    width: 100%;
+    color:  #CCCCCC;
+    font-weight: 400;
+}
+
+#button-container {
+    padding-top: 50px;
+    width: 90%;
+    display: flex;
+}
+
+#button-container input {
+    background: #111111;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#button-container span {
+    font-weight: 600;
+    text-decoration: underline;
+    color: gray;
+    font-size: 12px;
+    position: relative;
+    top: 8px;
+    left: 33px;
+}

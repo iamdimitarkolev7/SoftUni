@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+header p {
+    color: #454545;
+    font-size: 22px;
+    padding-left: 125px;
+    padding-right: 440px;
+}
+
+header .navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+
+header .navigation p span {
+    color: #21A2B5;
+}
+
+header .navigation nav ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding-top: 11px;
+}
+header .navigation nav ul li {
+    list-style-type: none;
+    padding-left: 33px;
+}
+
+header .navigation nav ul li, a {
+    text-decoration: none;
+    color: #454545;
+}
+
+#home {
+    border-bottom: 2px solid #21A2B5;
+    padding-bottom: 4px;
+}
+
+header .image-container {
+    background: url(./images/slide2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#rectangle {
+    background: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    max-width: 30%;
+    position: relative;
+    top: 245px;
+    left: 317px;
+}
+
+#rectangle p {
+    width: 87%;
+    color: white;
+    text-align: left;
+    position: relative;
+    right: 100px;
+    font-size: 36px;
+}
+
+#rectangle button {
+    padding: 8px 20px;
+    margin-left: 25px;
+    position: relative;
+    bottom: 20px;
+    color: white;
+    background: #21A2B5;
+    border-radius: 16px;
+    border: none;
+}
+
+main .welcome {
+    text-align: center;
+    padding: 20px 200px;
+}
+
+main .welcome h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+main .welcome .line {
+    position: relative;
+    width: 144px;
+    height: 3px;
+    background: #21A2B5;
+    left: 483px;
+    bottom: 20px;
+}
+
+main .welcome button {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 20px;
+    background: #454545;
+    color: white;
+}
+
+main .services {
+    background: #EEF0F1;
+    text-align: center;
+    padding-top: 10px;
+}
+
+main .services h1 {
+    font-size: 36px;
+    font-weight: 400;
+    
+}
+
+main .services .line {
+    background: #454545;
+    position: relative;
+    width: 144px;
+    height: 3px;
+    left: 400px;
+    left: 690px;
+    bottom: 24px;
+}
+
+main .services .articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 2rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+main .services .articles article {
+    width: 20%;
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 3px;
+}
+
+main .services .articles article img {
+    width: 100%;
+    height: 175px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+main .services .articles article .content {
+    color: #454657;
+    padding: 10px;
+}
+
+
+main .services .articles article .content h2 {
+    font-weight: 400;
+}
+
+main .services .articles article .content .read-more {
+    background: #454545;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    color: white;
+}
+
+main .subscribe {
+    background: #393F43;
+    text-align: center;
+    position: relative;
+    bottom: 29px;
+}
+
+main .subscribe h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 16px;
+}
+
+main .subscribe .line {
+    position: relative;
+    background:  white;
+    width: 200px;
+    height: 3px;
+    left: 652px;
+    top: -25px;
+}
+
+main .subscribe p {
+    color: white;
+    padding-bottom: 2rem;
+}
+
+main .subscribe input {
+    background: #545A5E;
+    padding: 8px 162px 8px 10px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 40px;
+}
+
+main .subscribe button {
+    background: #6BBFFF;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 2px;
+    border: none;
+}
+
+footer {
+    background: #2F3539;
+    color: white;
+    position: relative;
+    bottom: 29px;
+}
+
+footer .content {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 8rem;
+    justify-content: space-between;
+}
+
+footer .copyright {
+    background: #262B2F;
+}
+
+#email {
+    padding-top: 2rem;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer span {
+    color: #6BBFFF;
+}
+
+footer .copyright p {
+    text-align: center;
+    padding: 15px;
+}
