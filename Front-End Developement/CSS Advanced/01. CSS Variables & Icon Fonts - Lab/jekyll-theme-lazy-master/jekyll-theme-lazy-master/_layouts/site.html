@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{{ site.title }}</title>
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css" type="text/css" />
+	</head>
+	<body class="{% if page.type %}{{page.type}} {% endif %}{% if page.title %}{{ page.title | slugify }}{% else %}home{% endif %}">
+		<div class="site">
+
+			<input type="checkbox" id="nav-main-toggle" name="nav-main-toggle">
+			<header class="site-header">
+				<div class="site-branding">
+					<p class="site-title">
+						<a href="{{ site.baseurl }}/">{{ site.title }}</a>
+					</p>
+					<p class="site-description">{{ site.description }}</p>
+				</div>
+
+				<label id="nav-toggle-left" for="nav-main-toggle" class="fas nav-toggle left"><span>Menu</span></label>
+				<label id="nav-toggle-right" for="nav-main-toggle" class="fas nav-toggle right"><span>Menu</span></label>
+				<nav class="navigation main">
+					<ul>
+						<li><a class="fas fa-newspaper" href="{{ site.baseurl }}/">Blog</a></li>
+						<li><a class="fas fa-user-secret" href="{{ site.baseurl }}/about/">About</a></li>
+						<li><a class="fas fa-envelope" href="{{ site.baseurl }}/contacts/">Contacts</a></li>
+						<li><a class="fas fa-key" href="{{ site.baseurl }}/login/">Login</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main class="site-content">
+			
+				{{content}}
+			
+			</main>
+			<footer class="site-footer">
+			
+			</footer>
+		</div>
+	</body>
+</html>

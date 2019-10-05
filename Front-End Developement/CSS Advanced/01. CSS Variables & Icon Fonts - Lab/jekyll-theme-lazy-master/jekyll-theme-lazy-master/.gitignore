@@ -1,0 +1,5 @@
+.sass-cache
+.jekyll-metadata
+.vscode
+Gemfile.lock
+node_modules

@@ -1,0 +1,16 @@
+Download NodeJS - https://nodejs.org/en/
+Install NodeJS
+Download RubyInstaller - https://rubyinstaller.org/downloads/
+Install Ruby
+Install Jekyll - https://jekyllrb.com
+Copy gulpfile.js - https://github.com/kdankov/jekyll-theme-lazy
+Copy package.json
+Run `npm install -g gulp-cli`
+Create a folder `sites` in your user home folder
+Create new Jekyll site
+Copy files from labs
+Rename your CSS files to SCSS files
+Update .gitignore
+Create repo in GitHub
+Push to repo
+  
